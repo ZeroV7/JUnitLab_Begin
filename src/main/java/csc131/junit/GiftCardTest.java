@@ -16,7 +16,7 @@ public class GiftCardTest
 		balance = 100.00;
 		card = new GiftCard(issuingStore, balance);
 		assertEquals("getIssuingStore()",
-		issuingStore, card.getIssuingStore());
+					  issuingStore, card.getIssuingStore());
 	}
 	
 	@Test
@@ -30,7 +30,7 @@ public class GiftCardTest
 		balance = 100.00;
 		card = new GiftCard(issuingStore, balance);
 		assertEquals("getBalance()",
-		issuingStore, card.getIssuingStore(), 0.001);
+					  issuingStore, card.getIssuingStore(), 0.001);
 	}
 	
 	@Test
@@ -46,6 +46,6 @@ public class GiftCardTest
 		card = new GiftCard(issuingStore, balance);
 		str = "Remaining Balance: " + String.format("%6.2f", 80.00);
 		assertEquals("deduct_RemainingBalance(20.00)",
-		str, card.deduct(20.0));
+					  str, card.deduct(20.0));
 	}
 }
